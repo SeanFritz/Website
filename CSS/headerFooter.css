@@ -1,0 +1,84 @@
+/* Header styles */
+header {
+    background-color: #2D2A55; /* Deep indigo */
+    color: #EDE9F8; /* Warm, pale lilac */
+    padding: 10px 10px;
+    text-align: center;
+    border-bottom: 2px solid #5D4C86; /* Dusty purple border for separation */
+}
+
+.title-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #C3B5F2; /* Soft violet */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adds spacing between links */
+}
+
+.navbar p {
+    margin: 0;
+}
+
+.navbar a {
+    color: #C3B5F2; /* Soft violet */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #8979C0; /* Lavender-gray */
+}
+
+/*Footer styles */
+.site-footer {
+    background-color: #2D2A55; /* Deep indigo */
+    color: #EDE9F8; /* Warm, pale lilac */
+    text-align: center;
+    padding: 20px 10px;
+    /* margin-top: 20px; */
+    border-top: 2px solid #5D4C86; /* Dusty purple border for separation */
+    font-size: 14px;
+}
+
+.site-footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.site-footer .footer-nav {
+    margin-top: 10px;
+}
+
+.site-footer .footer-nav a {
+    color: #C3B5F2; /* Soft violet */
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.site-footer .footer-nav a:hover {
+    color: #8979C0; /* Lavender-gray */
+}
+
+/* Link styles */
+a {
+    color: #c3b5f2; /* Dusty purple */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8979C0; /* Lavender-gray */
+}

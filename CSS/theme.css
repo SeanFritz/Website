@@ -1,0 +1,124 @@
+/* 
+THIS IS THE COLOR PALETTE!!!
+
+Primary	#2D2A55	Deep indigo — moody, modern, and stable. Great for headers or nav bars.
+Secondary	#5D4C86	Dusty purple — adds warmth and 90s elegance, works beautifully in UI elements.
+Accent	#8979C0	Lavender-gray — a muted nod to the 90s pastel aesthetic, good for buttons or hover states.
+Highlight	#C3B5F2	Soft violet — gives that old-school gradient flair when used subtly. Try as a background tint or border.
+Background	#0D0C1D	Midnight navy — very modern and grounding, with tech vibes. Use for main backgrounds.
+Font Light	#EDE9F8	Warm, pale lilac — readable on dark backgrounds without being stark white.
+Retro Pop	#00FFFF	Neon cyan — optional, but a tiny bit of this can give a classic “under construction” web 1.0 jolt. Use sparingly for hover states or easter eggs.
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0D0C1D; /* Midnight navy */
+    color: #EDE9F8; /* Warm, pale lilac */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    /* Center content */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+
+    /* Add the background image to the body */
+    /* background-image: url('/Images/bg-hiRes.jpg'); */
+    background: linear-gradient(to bottom, rgba(13, 12, 29, 1) 0%, rgba(13, 12, 29, 0) 50%), 
+    url('/Images/bg-hiRes.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Optional: Makes the background stay fixed during scrolling */
+    text-align: center;
+}
+
+.site-content {
+    /* background-color: #0D0C1D; */
+    background-color: rgba(13, 12, 29, 0.9); /* Semi-transparent background for readability */
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add some padding around the content */
+    min-height: 85vh; /* Ensure the body takes up the full height of the viewport */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #8979c0; /* Deep indigo */
+}
+
+p {
+    color: #EDE9F8; /* Warm, pale lilac */
+    line-height: 1.6;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+/* 
+THIS IS THE COLOR PALETTE!!!
+
+Primary	#2D2A55	Deep indigo — moody, modern, and stable. Great for headers or nav bars.
+Secondary	#5D4C86	Dusty purple — adds warmth and 90s elegance, works beautifully in UI elements.
+Accent	#8979C0	Lavender-gray — a muted nod to the 90s pastel aesthetic, good for buttons or hover states.
+Highlight	#C3B5F2	Soft violet — gives that old-school gradient flair when used subtly. Try as a background tint or border.
+Background	#0D0C1D	Midnight navy — very modern and grounding, with tech vibes. Use for main backgrounds.
+Font Light	#EDE9F8	Warm, pale lilac — readable on dark backgrounds without being stark white.
+Retro Pop	#00FFFF	Neon cyan — optional, but a tiny bit of this can give a classic “under construction” web 1.0 jolt. Use sparingly for hover states or easter eggs.
+*/
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5d4c86;
+    border: 1px solid #0d0c1d;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ede9f8;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form .submit-button {
+    background-color: #8979c0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #c3b5f2;
+}
