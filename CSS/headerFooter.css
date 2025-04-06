@@ -1,10 +1,10 @@
 /* Header styles */
 header {
-    background-color: #2D2A55; /* Deep indigo */
-    color: #EDE9F8; /* Warm, pale lilac */
+    background-color: #2D2A55;
+    color: #EDE9F8;
     padding: 10px 10px;
     text-align: center;
-    border-bottom: 2px solid #5D4C86; /* Dusty purple border for separation */
+    border-bottom: 2px solid #5D4C86;
     font-family: 'Inter', sans-serif;
 }
 
@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Adds spacing between links */
+    gap: 15px;
 }
 
 .navbar p {
@@ -26,7 +26,7 @@ header {
 }
 
 .navbar a {
-    color: #C3B5F2; /* Soft violet */
+    color: #C3B5F2;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -34,17 +34,17 @@ header {
 }
 
 .navbar a:hover {
-    color: #8979C0; /* Lavender-gray */
+    color: #8979C0;
 }
 
 /*Footer styles */
 .site-footer {
-    background-color: #2D2A55; /* Deep indigo */
-    color: #EDE9F8; /* Warm, pale lilac */
+    background-color: #2D2A55;
+    color: #EDE9F8;
     text-align: center;
     padding: 20px 10px;
     /* margin-top: 20px; */
-    border-top: 2px solid #5D4C86; /* Dusty purple border for separation */
+    border-top: 2px solid #5D4C86;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
 }
@@ -64,25 +64,25 @@ header {
 }
 
 .site-footer .footer-nav a {
-    color: #C3B5F2; /* Soft violet */
+    color: #C3B5F2;
     text-decoration: none;
     margin: 0 5px;
     transition: color 0.3s ease;
 }
 
 .site-footer .footer-nav a:hover {
-    color: #8979C0; /* Lavender-gray */
+    color: #8979C0;
 }
 
 /* Link styles */
 a {
-    color: #c3b5f2; /* Dusty purple */
+    color: #c3b5f2;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #8979C0; /* Lavender-gray */
+    color: #8979C0;
 }
 
 code, pre, .mono {

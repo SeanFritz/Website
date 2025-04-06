@@ -66,23 +66,19 @@ p {
     text-align: left;
 }
 
-/* 
-THIS IS THE COLOR PALETTE!!!
-
-Primary	#2D2A55	Deep indigo — moody, modern, and stable. Great for headers or nav bars.
-Secondary	#5D4C86	Dusty purple — adds warmth and 90s elegance, works beautifully in UI elements.
-Accent	#8979C0	Lavender-gray — a muted nod to the 90s pastel aesthetic, good for buttons or hover states.
-Highlight	#C3B5F2	Soft violet — gives that old-school gradient flair when used subtly. Try as a background tint or border.
-Background	#0D0C1D	Midnight navy — very modern and grounding, with tech vibes. Use for main backgrounds.
-Font Light	#EDE9F8	Warm, pale lilac — readable on dark backgrounds without being stark white.
-Retro Pop	#00FFFF	Neon cyan — optional, but a tiny bit of this can give a classic “under construction” web 1.0 jolt. Use sparingly for hover states or easter eggs.
-*/
+.project-image {
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #5d4c86;
+    /* background-color: #5d4c86; */
+    background-color: rgba(93, 76, 134, 0.4);
     border: 1px solid #0d0c1d;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -124,5 +120,6 @@ Retro Pop	#00FFFF	Neon cyan — optional, but a tiny bit of this can give a clas
 }
 
 .contact-form .submit-button:hover {
-    background-color: #c3b5f2;
+    /* background-color: #c3b5f2; */
+    background-color: #5d4c86; /* Dusty purple */
 }
