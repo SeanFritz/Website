@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/CSS/theme.css">
         <link rel="stylesheet" href="/CSS/headerFooter.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
-        <!-- <script src="script.js"></script> -->
+        <script src="../Scripts/sectionUnfold.js"></script>
     </head>
 
     <header>
@@ -32,24 +32,32 @@
             <hr />
             <div class="left-aligned">
                 <h2>My Background</h2>
-                <p>I'm a software engineer with a passion for technology and innovation. I 
+                <!-- <p>I'm a software engineer with a passion for technology and innovation. I 
                     have a background in computer science and have worked on various projects 
                     that showcase my skills in programming, problem-solving, and creativity.</p>
                 <p>In my free time, I enjoy exploring new technologies, contributing to open-source 
-                    projects, and sharing my knowledge with others through articles and tutorials.</p>
-                <p>Feel free to check out my projects below!</p>
+                    projects, and sharing my knowledge with others through articles and tutorials.</p> -->
+                <p>Background spiel here</p>
+                <p>Feel free to check out my projects below! If any titles catch your
+                    eye, you can click on them to view more information about the project, 
+                    including a description, technologies used, and a link to the project itself.
+                </p>
             </div>
             <hr />
             <div class="left-aligned">
-                <h2>Project 1 - Personal Portfolio Website</h2>
-                <h4>April 2025</h4>
-                <p>That's right, this website <strong>is </strong> the project! It's a small personal website 
-                    to host my resumes, display some of my projects, and have a bit of fun with web-design in my freetime.  
-                </p>
+                <div class="project" id="project1">
+                    <h2 class="project-title">Project 1 - Personal Portfolio Website</h2>
+                    <div  class="project-details" style="display: none;">
+                        <h4>April 2025</h4>
+                        <p>That's right, this website <strong>is </strong> the project! It's a small personal website 
+                            to host my resumes, display some of my projects, and have a bit of fun with web-design in my freetime.  
+                        </p>
+                        <img src="/Images/bg-hiRes.jpg" alt="Project 1 Screenshot" class="project-image"/>
+                        <p>View the project here: <a href="https://example.com" target="_blank">Project 1</a></p>
+                    </div>
+                </div>
             </div>
-                <img src="/Images/bg-hiRes.jpg" alt="Project 1 Screenshot" class="project-image"/>
-                <p>View the project here: <a href="https://example.com" target="_blank">Project 1</a></p>
-            <!-- <hr />
+            <hr />
             <div class="left-aligned">
                 <h2>Project 2 - Development Name</h2>
                 <p>This is a small description of the project. It is a sentance or two at most, but
@@ -58,7 +66,7 @@
             </div>
                 <img src="/Images/bg-hiRes.jpg" alt="Project 2 Screenshot" class="project-image"/>
                 <p>View the project here: <a href="https://example.com" target="_blank">Project 2</a></p>
-            <hr /> -->
+            <hr />
         </div>
     </body>
 
