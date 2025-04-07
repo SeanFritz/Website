@@ -123,3 +123,41 @@ p {
     /* background-color: #c3b5f2; */
     background-color: #5d4c86; /* Dusty purple */
 }
+
+.navigation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.nav-card {
+    background-color: rgba(93, 76, 134, 0.4); /* Dusty purple with transparency */
+    color: #EDE9F8; /* Warm, pale lilac */
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.nav-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #C3B5F2; /* Soft violet */
+}
+
+.nav-card p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #EDE9F8; /* Warm, pale lilac */
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #5D4C86; /* Dusty purple */
+}
