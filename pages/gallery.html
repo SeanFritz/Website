@@ -5,8 +5,9 @@
         <title>Home</title>
         <link rel="stylesheet" href="/CSS/theme.css">
         <link rel="stylesheet" href="/CSS/headerFooter.css">
+        <link rel="stylesheet" href="/CSS/gallery.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
-        <!-- <script src="script.js"></script> -->
+        <script src="/Scripts/slideshow.js"></script>
     </head>
 
     <header>
@@ -20,7 +21,7 @@
             <!-- <p><a href="projects.html">Projects</a></p> -->
             <!-- <p><a href="applications.html">Applications</a></p> -->
             <!-- <p><a href="articles.html">Articles</a></p> -->
-            <!-- <p><a href="gallery.html">Gallery</a></p> -->
+            <p><a href="gallery.html">Gallery</a></p>
             <p><a href="contact.html">Contact</a></p>
         </nav>
     </header>
@@ -35,9 +36,39 @@
                 <h2>Main Gallery</h2>
                 <p>A collection of some interesting and fun photos I've taken.</p>
             </div>
-                <img src="/Images/bg-hiRes.jpg" class="project-image"/>
-                <p><a href="../Content/Galleries/postGrad.html">Check it out here!</a></p>
-            <hr />
+            
+            <div class="slideshow-controls">
+                <label>
+                    <input type="checkbox" id="autoplay-toggle" checked>
+                    Enable Autoplay
+                </label>
+                <br>
+                <label for="custom-interval">Set Slide Interval (seconds): </label>
+                <input type="number" id="custom-interval" value="5" min="1" max="30">
+                <button id="set-interval">Set Interval</button>
+            </div>
+
+            <br>
+
+            <div class="slideshow-container">
+                <div class="slide mySlides fade active">
+                    <img src="/Images/gallery/1.jpg">
+                    <h3>Art one</h3>
+                    <p>1920x1080 test image 1</p>
+                </div>
+                <div class="slide mySlides fade">
+                    <img src="/Images/gallery/2.webp">
+                    <h3>Art two</h3>
+                    <p>1920x1080-ish test image 2</p>
+                </div>
+                <div class="slide mySlides fade">
+                    <img src="/Images/gallery/3.jpg">
+                    <h3>Art three</h3>
+                    <p>1920x1080 test image 3</p>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
             
             <!-- <h2>Thanks for visiting!</h2>
             <p>Please don't hesitate to reach out to me for any circumstance.<br>I'll try to be in-touch whenever I can.</p> -->
@@ -46,7 +77,7 @@
 
     <footer class="site-footer">
         <div class="footer-content">
-            <p>Last updated April 2025 | Background image: <a target="_blank" href="https://artsandculture.google.com/asset/view-of-dresden-by-moonlight/QQG0t8oNcwu1Jw?hl=en">
+            <p>Last updated May 2025 | Background image: <a target="_blank" href="https://artsandculture.google.com/asset/view-of-dresden-by-moonlight/QQG0t8oNcwu1Jw?hl=en">
                 <i>View of Dresden by Moonlight</i></a> by Johan Christian Dahl</p>
             <nav class="footer-nav">
                 <a href="https://github.com/SeanFritz" target="_blank">GitHub</a>
