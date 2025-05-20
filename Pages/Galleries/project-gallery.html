@@ -16,37 +16,51 @@
         </nav>
 
         <nav class="navbar">
-            <p><a href="index.html">Home</a></p>
-            <p><a href="about.html">About Me</a></p>
+            <p><a href="/Pages/index.html">Home</a></p>
+            <p><a href="/Pages/about.html">About Me</a></p>
             <!-- <p><a href="projects.html">Projects</a></p> -->
             <!-- <p><a href="applications.html">Applications</a></p> -->
             <!-- <p><a href="articles.html">Articles</a></p> -->
-            <p><a href="gallery.html">Gallery</a></p>
-            <p><a href="contact.html">Contact</a></p>
+            <p><a href="/Pages/gallery.html">Gallery</a></p>
+            <p><a href="/Pages/contact.html">Contact</a></p>
         </nav>
     </header>
 
     <body>
         <div class="site-content">
-            <h1>Gallery</h1>
-            <p>A collection of photos <br>that I've taken over the years.</p>
-            </p>
+            <h1>Project Gallery</h1>
             <hr />
-            <div class="left-aligned">
-                <div class="gallery-sections">
-                    <section class="gallery-section">
-                        <h2>Main Gallery</h2>
-                        <p>A collection of some interesting and fun photos I've taken.</p>
-                        <a href="/Pages/Galleries/main-gallery.html" class="gallery-link">View Main Gallery</a>
-                    </section>
+            <div class="slideshow-controls">
+                <label>
+                    <input type="checkbox" id="autoplay-toggle" checked>
+                    Enable Autoplay
+                </label>
+                <br>
+                <label for="custom-interval">Set Slide Interval (seconds): </label>
+                <input type="number" id="custom-interval" value="5" min="1" max="30">
+                <button id="set-interval">Confirm</button>
+            </div>
 
-                    <section class="gallery-section">
-                        <h2>Art Gallery</h2>
-                        <p>A collection of some of my favorite pieces of art.</p>
-                        <a href="/Pages/Galleries/videogame-gallery.html" class="gallery-link">View Art Gallery</a>
-                    </section>
+            <br>
 
+            <div class="slideshow-container">
+                <div class="slide mySlides fade active">
+                    <img src="/Images/gallery/1.jpg">
+                    <h3>Art one</h3>
+                    <p>1920x1080 test image 1</p>
                 </div>
+                <div class="slide mySlides fade">
+                    <img src="/Images/gallery/2.webp">
+                    <h3>Art two</h3>
+                    <p>1920x1080-ish test image 2</p>
+                </div>
+                <div class="slide mySlides fade">
+                    <img src="/Images/gallery/3.jpg">
+                    <h3>Art three</h3>
+                    <p>1920x1080 test image 3</p>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>
             
             <!-- <h2>Thanks for visiting!</h2>
@@ -61,7 +75,7 @@
             <nav class="footer-nav">
                 <a href="https://github.com/SeanFritz" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/seanfritz" target="_blank">LinkedIn</a>
-                <a href="contact.html">Contact</a>
+                <a href="/Pages/contact.html">Contact</a>
             </nav>
         </div>
     </footer>
