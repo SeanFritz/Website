@@ -37,11 +37,13 @@ body {
 
     /* Add the background image to the body */
     /* background-image: url('/Images/bg-hiRes.jpg'); */
-    background: linear-gradient(to bottom, rgba(13, 12, 29, 1) 0%, rgba(13, 12, 29, 0) 50%), url('/Images/bg-hiRes.jpg');
+    /* background: linear-gradient(to bottom, rgba(13, 12, 29, 1) 0%, rgba(13, 12, 29, 0) 50%), url('/Images/bg-hiRes.jpg'); */
+    background: linear-gradient(to bottom, rgba(13, 12, 29, 1) 0%, rgba(13, 12, 29, 0) 50%), url('/Images/bg-webp.webp');
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     background-attachment: fixed;
     text-align: center;
+    background-repeat: no-repeat
 }
 
 .site-content {
