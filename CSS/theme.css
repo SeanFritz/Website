@@ -245,3 +245,63 @@ p {
 .hobby-text {
     line-height: 1.4;
 }
+
+/* Mobile viewport styles */
+@media screen and (max-width: 768px) {
+    /* Index.html */
+    .navigation-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .nav-card {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .site-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About.html */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hobby-item {
+        font-size: 0.9rem;
+    }
+
+    /* Contact.html */
+    .contact-navigation-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
